@@ -4,16 +4,16 @@ metadata:
   name: pod1
   namespace: facebook
 spec:
-   containers: 
-   - name: sonali
-     image: nginx
-     ports: 
-     - containerPort: 80
-   containers:
-   - name: rudra
-     image: http
-     ports:
-     -containerPort: 80
-     
-     
+  containers:
+  - name: web
+    image: httpd
+    ports:
+    - containerPort: 80
+  - name: db
+    image: mysql
+    ports:
+    - containerPort: 3306
+    env:
+    - name: MYSQL_ROOT_PASSWORD
+      value: ranga123
       
