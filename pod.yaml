@@ -4,8 +4,9 @@ kind: Pod
 metadata:
   name: nginxpod
   namespace: facebook
-container:
-  name: nginx
-  image: nginx
-  - port:
-    port: 80
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    ports:
+    - ContainerPort: 80
