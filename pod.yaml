@@ -6,6 +6,6 @@ metadata:
   namespace: facebook
 container:
   name: nginx
-  imge: nginx
+  image: nginx
   - port:
     port: 80
